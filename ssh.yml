@@ -1,0 +1,11 @@
+name: SSH Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ssh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start SSH via tmate
+        uses: mxschmitt/action-tmate@v3
